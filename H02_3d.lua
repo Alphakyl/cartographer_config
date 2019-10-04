@@ -77,7 +77,9 @@ TRAJECTORY_BUILDER_3D.num_accumulated_range_data = 1
 -- TRAJECTORY_BUILDER_3D.submaps.num_range_data = 1500
 -- Set to 1 because only need one Ouster point cloud message / full 360 coverage
 
-TRAJECTORY_BUILDER_3D.real_time_correlative_scan_matcher.linear_search_window = 0.11
+TRAJECTORY_BUILDER_3D.real_time_correlative_scan_matcher.linear_search_window = 0.05
+-- Switched to 0.05, fixed alignment of first stair decrease
+-- TRAJECTORY_BUILDER_3D.real_time_correlative_scan_matcher.linear_search_window = 0.11
 -- TRAJECTORY_BUILDER_3D.real_time_correlative_scan_matcher.linear_search_window = 0.15
 -- IMPACT: SET BASED ON 1 M/S MAX SPEED, TRACKING ERROR IF VEHICLES GOES FASTER
 
